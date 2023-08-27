@@ -1,0 +1,24 @@
+strings:
+  inputs: PokemonSummaryApp/Strings/Localizable.strings
+  outputs:
+    - templateName: structured-swift5
+      output: PokemonSummaryApp/Strings/strings.swift
+      params:
+          publicAccess: true
+      
+xcassets:
+    inputs:
+    - PokemonSummaryApp/View/Assets/Color.xcassets
+    - PokemonSummaryApp/View/Assets/Image.xcassets
+    outputs:
+      - templateName: swift5
+        params:
+         forceProvidesNamespaces: true
+         publicAccess: true
+        output: PokemonSummaryApp/View/Assets.swift
+          
+ib:
+  inputs: .
+  outputs:
+    templateName: scenes-swift5
+    output: PokemonSummaryApp/Generated/StoryboardScenes.swift
