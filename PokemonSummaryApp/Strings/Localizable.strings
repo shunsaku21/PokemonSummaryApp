@@ -6,4 +6,8 @@
   
 */
 
-"title"="ポケモンまとめ";
+"title"="ポケカ"
+"item"="シュミレーション"
+"secondItem"="近くのポケカ情報"
+"thirdItem"="環境デッキ"
+"forceItem"="ポケカ相場"
