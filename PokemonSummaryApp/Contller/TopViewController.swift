@@ -8,12 +8,14 @@
 import UIKit
 
 class TopViewController: UIViewController {
-
+    
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        L10n.title
+        
     }
-
-
 }
+
 
