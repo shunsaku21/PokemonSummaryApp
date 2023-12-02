@@ -10,6 +10,8 @@
 		0FC97814381FB0AD37B75DB6 /* Pods_PokemonSummaryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9DA21316867ED9D96F8051D /* Pods_PokemonSummaryApp.framework */; };
 		1743E7099E5A8E5B7D3142BD /* Pods_PokemonSummaryApp_PokemonSummaryAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAEB8DAC732327A9FF8BDC9F /* Pods_PokemonSummaryApp_PokemonSummaryAppUITests.framework */; };
 		5FD7AF889F89356D76625A5D /* Pods_PokemonSummaryAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13959010F7A1FCB0528D24B7 /* Pods_PokemonSummaryAppTests.framework */; };
+		8C3296C52B1AFEE60081FC08 /* PokemonTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C3296C32B1AFEE60081FC08 /* PokemonTitleCell.swift */; };
+		8C3296C62B1AFEE60081FC08 /* PokemonTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C3296C42B1AFEE60081FC08 /* PokemonTitleCell.xib */; };
 		8CAA58062A9B2343001C8BC1 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 8CAA58052A9B2343001C8BC1 /* Model */; };
 		8CAA580D2A9B2455001C8BC1 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA580C2A9B2455001C8BC1 /* TableViewCell.swift */; };
 		8CAA580F2A9B2470001C8BC1 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CAA580E2A9B2470001C8BC1 /* WebViewController.swift */; };
@@ -53,6 +55,8 @@
 		3BED253E3D6893A6E72D74D6 /* Pods-PokemonSummaryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSummaryApp.release.xcconfig"; path = "Target Support Files/Pods-PokemonSummaryApp/Pods-PokemonSummaryApp.release.xcconfig"; sourceTree = "<group>"; };
 		6D639EDE3BB6E7C6A338B431 /* Pods-PokemonSummaryApp-PokemonSummaryAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSummaryApp-PokemonSummaryAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-PokemonSummaryApp-PokemonSummaryAppUITests/Pods-PokemonSummaryApp-PokemonSummaryAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8A2AEE536511B5B5EFA7A887 /* Pods-PokemonSummaryAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PokemonSummaryAppTests.debug.xcconfig"; path = "Target Support Files/Pods-PokemonSummaryAppTests/Pods-PokemonSummaryAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8C3296C32B1AFEE60081FC08 /* PokemonTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonTitleCell.swift; sourceTree = "<group>"; };
+		8C3296C42B1AFEE60081FC08 /* PokemonTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PokemonTitleCell.xib; sourceTree = "<group>"; };
 		8CAA58052A9B2343001C8BC1 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
 		8CAA580C2A9B2455001C8BC1 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		8CAA580E2A9B2470001C8BC1 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8C3296BE2B1AFDA90081FC08 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8C3296C32B1AFEE60081FC08 /* PokemonTitleCell.swift */,
+				8C3296C42B1AFEE60081FC08 /* PokemonTitleCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		8CAA58072A9B2351001C8BC1 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +214,7 @@
 		8CC10C632A9B108800A86286 /* PokemonSummaryApp */ = {
 			isa = PBXGroup;
 			children = (
+				8C3296BE2B1AFDA90081FC08 /* Cell */,
 				8CAA58222A9B3AB6001C8BC1 /* Generated */,
 				8CAA58102A9B3506001C8BC1 /* Strings */,
 				8CAA58092A9B23A3001C8BC1 /* Contller */,
@@ -339,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C3296C62B1AFEE60081FC08 /* PokemonTitleCell.xib in Resources */,
 				8CAA58122A9B354C001C8BC1 /* Localizable.strings in Resources */,
 				8CC10C712A9B108900A86286 /* LaunchScreen.storyboard in Resources */,
 				8CC10C6E2A9B108900A86286 /* Assets.xcassets in Resources */,
@@ -460,6 +475,7 @@
 				8CAA581F2A9B390D001C8BC1 /* Assets.swift in Sources */,
 				8CAA580D2A9B2455001C8BC1 /* TableViewCell.swift in Sources */,
 				8CAA58142A9B357A001C8BC1 /* strings.swift in Sources */,
+				8C3296C52B1AFEE60081FC08 /* PokemonTitleCell.swift in Sources */,
 				8CC10C652A9B108800A86286 /* AppDelegate.swift in Sources */,
 				8CAA580F2A9B2470001C8BC1 /* WebViewController.swift in Sources */,
 				8CC10C672A9B108800A86286 /* SceneDelegate.swift in Sources */,

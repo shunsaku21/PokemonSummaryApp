@@ -16,10 +16,29 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="szG-aB-4GQ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BxU-nP-tGN"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="CvE-bf-Lkb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="szG-aB-4GQ" secondAttribute="trailing" id="06R-Yd-yNf"/>
+                            <constraint firstItem="szG-aB-4GQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8Jf-qO-6dc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="szG-aB-4GQ" secondAttribute="bottom" id="fRH-RK-d8u"/>
+                            <constraint firstItem="szG-aB-4GQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jLA-hi-CKR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="xpu-4h-5Iy"/>
+                    <connections>
+                        <outlet property="tableView" destination="szG-aB-4GQ" id="71a-DZ-IF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
