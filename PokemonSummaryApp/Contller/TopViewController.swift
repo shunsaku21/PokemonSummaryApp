@@ -14,8 +14,16 @@ class TopViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setItem()
         
     }
+    
+    func setItem() {
+        // タイトル追加
+        self.navigationItem.title = L10n.title
+    }
+   
 }
+
 
 

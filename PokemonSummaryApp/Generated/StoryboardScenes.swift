@@ -20,7 +20,7 @@ internal enum StoryboardScene {
   internal enum TopView: StoryboardType {
     internal static let storyboardName = "TopView"
 
-    internal static let initialScene = InitialSceneType<PokemonSummaryApp.TopViewController>(storyboard: Self.self)
+    internal static let initialScene = InitialSceneType<UIKit.UINavigationController>(storyboard: Self.self)
   }
 }
 // swiftlint:enable explicit_type_interface identifier_name line_length type_body_length type_name

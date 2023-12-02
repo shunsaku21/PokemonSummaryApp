@@ -10,11 +10,16 @@ import Foundation
 // swiftlint:disable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:disable nesting type_body_length type_name vertical_whitespace_opening_braces
 public enum L10n {
-  /// Localizable.strings
-  ///   PokemonSummaryApp
-  /// 
-  ///   Created by beck on 2023/08/27.
-  public static let title = L10n.tr("Localizable", "title", fallback: "ポケモンまとめ")
+  /// ポケカ相場
+  public static let forceItem = L10n.tr("Localizable", "forceItem", fallback: "ポケカ相場")
+  /// シュミレーション
+  public static let item = L10n.tr("Localizable", "item", fallback: "シュミレーション")
+  /// 近くのポケカ情報
+  public static let secondItem = L10n.tr("Localizable", "secondItem", fallback: "近くのポケカ情報")
+  /// 環境デッキ
+  public static let thirdItem = L10n.tr("Localizable", "thirdItem", fallback: "環境デッキ")
+  /// まとめ
+  public static let title = L10n.tr("Localizable", "title", fallback: "まとめ")
 }
 // swiftlint:enable explicit_type_interface function_parameter_count identifier_name line_length
 // swiftlint:enable nesting type_body_length type_name vertical_whitespace_opening_braces
